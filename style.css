@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,500;0,600;0,700;1,400&family=DM+Serif+Display&family=Fredoka+One&family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ecf0f3;
+  padding-top: 4em;
+  display: flex;
+  flex-wrap: wrap;
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #6DBAFE;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+body header .logo {
+  font-weight: 800;
+  color: #ecf0f3;
+  font-family: "Fredoka One", cursive;
+  letter-spacing: 5px;
+}
+body header .logo span {
+  color: #14284B;
+}
+body header .addNote {
+  padding: 10px 15px;
+  background: #14284B;
+  border: none;
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 10px;
+  color: #ecf0f3;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+body header .addNote:hover {
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.16), -5px -5px 12px rgba(0, 0, 0, 0.16);
+}
+body .note {
+  margin: 20px;
+  padding: 0 5px;
+  width: 220px;
+  height: 230px;
+  background: #ecf0f3;
+  box-shadow: inset 5px 5px 12px #ffffff, -5px -5px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  position: relative;
+}
+body .note .tools {
+  display: flex;
+  padding: 5px 10px;
+}
+body .note button {
+  background: #e01106;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+body .note button img {
+  width: 40%;
+}
+body .note .edit {
+  background: #f3a805;
+}
+body .note .main {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  height: 170px;
+  overflow: scroll !important;
+  text-align: left;
+  font-family: "Signika", sans-serif;
+}
+body .note .main p {
+  font-size: 3em;
+  display: contents;
+}
+body .note .hidden {
+  display: none;
+}
+body .note textarea {
+  width: 100%;
+  height: 170px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  padding: 5px;
+  box-shadow: inset 5px 5px 9px rgba(0, 0, 0, 0.1), inset -5px -5px 9px rgba(0, 0, 0, 0.1);
+}
+body .note .colors {
+  display: flex;
+  position: absolute;
+  right: 6px;
+  bottom: 5px;
+}
+body .note .colors .white {
+  background: #ecf0f3;
+  border: 1px solid #000;
+}
+body .note .colors .violet {
+  background: #c30182;
+  border: 1px solid #000;
+}
+body .note .colors .purpule {
+  background: #a201c3;
+  border: 1px solid #000;
+}
+body .note .colors .blue {
+  background: #4101c3;
+  border: 1px solid #000;
+}
+body .note .colors .monza {
+  background: #c30121;
+  border: 1px solid #000;
+}
+body .note.whiteColor {
+  background: #ecf0f3;
+}
+body .note.violetColor {
+  background: #c30182;
+}
+body .note.purpuleColor {
+  background: #a201c3;
+}
+body .note.blueColor {
+  background: #4101c3;
+}
+body .note.monzaColor {
+  background: #c30121;
+}
+
+@media (max-width: 376px) {
+  .logo {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
