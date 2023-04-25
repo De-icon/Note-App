@@ -37,8 +37,8 @@ function addNewNote(text = '') {
 
 
     textArea.value = text
-    main.inner
-    HTML = text
+    main.innerHTML = text
+
     
     del.addEventListener('click', () => {
         note.remove()
